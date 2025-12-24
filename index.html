@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRUCE BOGE - Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Ionicons for icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <!-- MAIN CONTAINER -->
+    <div class="main-container">
+
+        <!-- SIDEBAR CARD -->
+        <aside class="sidebar" data-sidebar>
+
+            <div class="sidebar-info">
+
+                <figure class="avatar-box">
+                    <img src="images/avatar.png" alt="Your Name" width="150">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Your Name">BRUCE BOGE</h1>
+                    <p class="title">n8n Developer</p>
+                </div>
+
+                <button class="info-more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="sidebar-info-more">
+
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:[email protected]" class="contact-link">trionmulti@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">PHONE</p>
+                            <a href="tel:+1234567890" class="contact-link">+1 (234) 567-890</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">LOCATION</p>
+                            <address>Nairobi, Kenya</address>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/bruceboge" class="social-link" target="_blank">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://github.com/bruceboge" class="social-link" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.instagram.com/brucboge" class="social-link" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://twitter.com/realsanct" class="social-link" target="_blank">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </aside>
+
+        <!-- MAIN CONTENT CARD -->
+        <div class="main-content">
+
+            <!-- NAVBAR -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link data-target="about">About</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link data-target="resume">Resume</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link data-target="portfolio">Portfolio</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link data-target="blog">Blog</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link data-target="contact">Contact</button>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- ABOUT -->
+            <article class="about active" data-page="about">
+
+                <header>
+                    <h2 class="h2 article-title">About Me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>
+                        A passionate Developer specializing in n8n automation, Web Development, and System Design. 
+                        With a strong background in building scalable web applications and efficient automation workflows,
+                        I prioritize creating seamless user experiences and robust backend systems. 
+                        My expertise lies in integrating complex APIs, optimizing performance, and designing 
+                        architectures that stand the test of time.
+                    </p>
+                    <p>
+                        If you're seeking a skilled developer to breathe life into your project and exceed your
+                        expectations, I am here
+                        to collaborate and create magic together. Reach out, and let's transform your vision into a
+                        reality!
+                    </p>
+                </section>
+
+                <!-- WHAT I'M DOING -->
+                <section class="service">
+                    <h3 class="h3 service-title">What I'm Doing</h3>
+
+                    <ul class="service-list">
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="git-network-outline"></ion-icon>
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">n8n</h4>
+                                <p class="service-item-text">
+                                    Professional development of n8n workflows and Automations for Businesses and Personal use.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="desktop-outline"></ion-icon>
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web Development</h4>
+                                <p class="service-item-text">
+                                    High-quality development of sites and Web apps at the professional level.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="layers-outline"></ion-icon>
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">System Design</h4>
+                                <p class="service-item-text">
+                                    Architecting scalable, robust, and maintainable software systems tailored to specific business needs.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <ion-icon name="server-outline"></ion-icon>
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Backend Development</h4>
+                                <p class="service-item-text">
+                                    High-performance backend services designed for scalability and seamless user
+                                    experience.
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+                <!-- SKILLS -->
+                <section class="skills-section">
+                    <h3 class="h3 skills-title">Skills</h3>
+
+                    <ul class="skills-icon-list">
+                    <!--<li class="skill-icon-item">
+                            <img src="images/n8n.png" alt="n8n" title="n8n">
+                        </li> -->
+                        <li class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React">
+                        </li>
+                        <li class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python">
+                        </li>
+                        <li class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5">
+                        </li>
+                        <li class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3">
+                        </li>
+                        <li class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
+                        </li>
+                        <li class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker">
+                        </li>
+                        <li class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" title="Firebase">
+                        </li>
+                        <!--<li class="skill-icon-item">
+                            <img src="images/antigravity.svg" alt="Antigravity" title="Antigravity">
+                        </li> -->
+                        <li class="skill-icon-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" title="Azure">
+                        </li>
+                    </ul>
+
+                </section>
+
+            </article>
+
+            <!-- RESUME -->
+            <article class="resume" data-page="resume">
+
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+
+                        <!--<li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Master of Science in Telecom Engineering</h4>
+                            <span>2027 — 2029</span>
+                            <p class="timeline-text">
+                                University Name - Advanced studies in Telecom engineering, algorithms, and system
+                                design.
+                            </p>
+                        </li> -->
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Bachelor of Science in Telecommunications and Information Engineering</h4>
+                            <span>2023 — 2027</span>
+                            <p class="timeline-text">
+                                Dedan Kimathi University of Technology - Foundation in Telacommunications fundamentals, Information systems and Programming.
+                            </p>
+                        </li>
+
+                    </ol>
+
+                </section>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="briefcase-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Experience</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">n8n Developer</h4>
+                            <span>April 2025 — Present</span>
+                            <p class="timeline-text">
+                                NECA - Developing and maintaining existing n8n workflows.
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Junior Web Developer</h4>
+                            <span>2025 — Present</span>
+                            <p class="timeline-text">
+                                NECA - Developing and maintaining web applications using modern tech stack.
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">(Junior Developer) Systems Design</h4>
+                            <span>2025 — Present</span>
+                            <p class="timeline-text">
+                                NECA - Started career Designing and building features in production
+                                Systems.
+                            </p>
+                        </li>
+
+                    </ol>
+
+                </section>
+
+                <section class="skill">
+
+                    <h3 class="h3 skills-title">My Skills</h3>
+
+                    <ul class="skills-list content-card">
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Web Development</h5>
+                                <data value="90">90%</data>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 90%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">n8n Workflow Development</h5>
+                                <data value="85">85%</data>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 85%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">System Design</h5>
+                                <data value="80">80%</data>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 80%"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Backend Development</h5>
+                                <data value="75">40%</data>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 40%"></div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+            <!-- PORTFOLIO -->
+            <article class="portfolio" data-page="portfolio">
+
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+
+                    <ul class="filter-list">
+                        <li class="filter-item">
+                            <button class="active" data-filter-btn data-category="all">All</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn data-category="web">Web Development</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn data-category="applications">n8n</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn data-category="ui-ux">Systems Design</button>
+                        </li>
+                    </ul>
+
+                    <div class="filter-select-box">
+                        <button class="filter-select" data-select>
+                            <div class="select-value" data-select-value>Select category</div>
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+                        </button>
+                        <ul class="select-list">
+                            <li class="select-item">
+                                <button data-select-item data-category="all">All</button>
+                            </li>
+                            <li class="select-item">
+                                <button data-select-item data-category="web">Web Development</button>
+                            </li>
+                            <li class="select-item">
+                                <button data-select-item data-category="applications">n8n</button>
+                            </li>
+                            <li class="select-item">
+                                <button data-select-item data-category="ui-ux">System Design</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="project-list">
+
+                        <li class="project-item active" data-filter-item data-category="web">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="images/ClubVote.png" alt="ClubVote" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">ClubVote</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+                        
+                        <li class="project-item active" data-filter-item data-category="web">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="images/project-1.png" alt="Project Alpha" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Project Alpha</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="applications">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="images/project-2.png" alt="Project Beta" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Project Beta</h3>
+                                <p class="project-category">Applications</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="ui-ux">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="images/project-2.png" alt="Project Gamma" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Project Gamma</h3>
+                                <p class="project-category">UI/UX</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="web">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+                                    <img src="images/project-1.png" alt="Project Delta" loading="lazy">
+                                </figure>
+                                <h3 class="project-title">Project Delta</h3>
+                                <p class="project-category">Web Development</p>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+            <!-- BLOG -->
+            <article class="blog" data-page="blog">
+
+                <header>
+                    <h2 class="h2 article-title">Blog</h2>
+                </header>
+
+                <section class="blog-posts">
+
+                    <ul class="blog-posts-list">
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="images/blog-1.png" alt="Modern Web Development Best Practices" loading="lazy">
+                                </figure>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Development</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2024-01-15">Jan 15, 2024</time>
+                                    </div>
+                                    <h3 class="h3 blog-item-title">Modern Web Development Best Practices</h3>
+                                    <p class="blog-text">
+                                        Exploring the latest trends and best practices in modern web development.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="images/blog-2.png" alt="UI/UX Design Principles" loading="lazy">
+                                </figure>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2024-01-10">Jan 10, 2024</time>
+                                    </div>
+                                    <h3 class="h3 blog-item-title">UI/UX Design Principles</h3>
+                                    <p class="blog-text">
+                                        Understanding the fundamental principles of creating great user experiences.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+            <!-- CONTACT -->
+            <article class="contact" data-page="contact">
+
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.2782544777!2d36.8148359!3d-1.286389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d22f16c713%3A0x265e317822a964f0!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1647608789441!5m2!1sen!2ske"
+                            width="400" height="300" loading="lazy"></iframe>
+                    </figure>
+                </section>
+
+                <section class="contact-form">
+
+                    <h3 class="h3 form-title">Contact Form</h3>
+
+                    <form action="#" class="form" data-form>
+
+                        <div class="input-wrapper">
+                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required
+                                data-form-input>
+                            <input type="email" name="email" class="form-input" placeholder="Email address" required
+                                data-form-input>
+                        </div>
+                        
+                        <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input>
+
+                        <textarea name="message" class="form-input" placeholder="Your Message" required
+                            data-form-input></textarea>
+
+                        <button class="form-btn" type="submit">
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+
+                    </form>
+
+                </section>
+
+            </article>
+
+        </div>
+
+    </div>
+
+    <!-- MAIN JS -->
+    <script src="script.js"></script>
+
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
