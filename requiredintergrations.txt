@@ -1,0 +1,12 @@
+intergrate the contactform to a database-alerts
+intergrate the hashnode blog to blog sections
+add certification section to Resume
+Highlight these projects
+1. n8n
+    news letter to linkedin
+
+2. web apps
+    ClubVote
+
+3. system design
+    Clubflow
