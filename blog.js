@@ -1,4 +1,4 @@
-const HASHNODE_HOST = "n8n-msazrure-hosting.hashnode.dev"; // Extracted from user's URL
+const HASHNODE_HOST = "bruceboge.hashnode.dev"; // Extracted from user's URL
 
 async function fetchHashnodePosts() {
   const query = `
