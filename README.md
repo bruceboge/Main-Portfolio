@@ -12,7 +12,7 @@ Welcome to the source for my personal portfolio website — a clean, responsive 
 Demo
 - Live preview: (deployed via GitHub Pages / your preferred host)
 - Screenshot (Hero):
-  ![Hero Screenshot](./assets/hero-screenshot.png)
+  ![Hero Screenshot](./images/portfolio.png)
   > Replace `./assets/hero-screenshot.png` with your actual hero image path if different.
 
 Quick links
@@ -144,9 +144,9 @@ Customizing content
 
 Examples of visuals
 - Hero (replace path to your screenshot):
-  ![Hero](./assets/hero-screenshot.png)
+  ![Hero](./images/portfolio.png)
 - Projects sample card:
-  ![Project sample](./assets/project-sample.png)
+  ![Project sample](./images/ClubVote.png)
 
 Notes on inspiration
 This project was inspired by the design and flow of Aakash Raj Banshi's portfolio (https://aakashrajbanshi.com.np/). I studied the layout, spacing, and subtle interactivity there and adapted concepts such as a focused hero, clean project cards, and tasteful micro-animations, while maintaining my own color palette, typography choices, and content priorities.
