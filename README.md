@@ -142,11 +142,11 @@ Customizing content
 - Update project cards in HTML with live links and repo links.
 - Tweak CSS variables in :root for quick theme changes.
 
-Examples of visuals
-- Hero (replace path to your screenshot):
+Visuals
+- Preview:
   ![Hero](./images/portfolio.png)
 - Projects sample card:
-  ![Project sample](./images/ClubVote.png)
+  ![ClubVote Project](./images/ClubVote.png)
 
 Notes on inspiration
 This project was inspired by the design and flow of Aakash Raj Banshi's portfolio (https://aakashrajbanshi.com.np/). I studied the layout, spacing, and subtle interactivity there and adapted concepts such as a focused hero, clean project cards, and tasteful micro-animations, while maintaining my own color palette, typography choices, and content priorities.
