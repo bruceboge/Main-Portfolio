@@ -87,7 +87,15 @@ Visit the [live portfolio](https://bruceboge.github.io/Portfolio) to see the ful
    npx http-server
    ```
 
+<<<<<<< HEAD
 3. Navigate to `http://localhost:8000`
+=======
+Visuals
+- Preview:
+  ![Hero](./images/portfolio.png)
+- Projects sample card:
+  ![ClubVote Project](./images/ClubVote.png)
+>>>>>>> e2c4c4cfec27df874e1672cf15242242788c221e
 
 ### Customization
 
