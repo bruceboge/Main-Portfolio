@@ -1,172 +1,169 @@
 # Bruce Boge — Personal Portfolio
 
 [![Portfolio Status](https://img.shields.io/badge/status-complete-brightgreen)](https://github.com/bruceboge/Portfolio)
-[![Languages](https://img.shields.io/badge/HTML-42.4%25-orange)](#stats)
-[![Languages](https://img.shields.io/badge/CSS-39%25-blue)](#stats)
-[![Languages](https://img.shields.io/badge/JavaScript-18.6%25-yellow)](#stats)
+[![Languages](https://img.shields.io/badge/HTML-42.4%25-orange)](#tech-stack)
+[![Languages](https://img.shields.io/badge/CSS-39%25-blue)](#tech-stack)
+[![Languages](https://img.shields.io/badge/JavaScript-18.6%25-yellow)](#tech-stack)
 
-Welcome to the source for my personal portfolio website — a clean, responsive showcase built with HTML, CSS and JavaScript. This project was designed and implemented with attention to accessibility, performance, and a focus on clean UI/UX. I built it following inspiration from https://aakashrajbanshi.com.np/ and adapted visual ideas and interaction patterns into a unique, personal design language.
+A clean, responsive personal portfolio website showcasing my projects and skills. Built with vanilla HTML, CSS, and JavaScript with a focus on accessibility, performance, and user experience.
 
----
-
-Demo
-- Live preview: (deployed via GitHub Pages / your preferred host)
-- Screenshot (Hero):
-  ![Hero Screenshot](./images/portfolio.png)
-  > Replace `./assets/hero-screenshot.png` with your actual hero image path if different.
-
-Quick links
-- Design inspiration: https://aakashrajbanshi.com.np/
+**[View Live](https://bruceboge.github.io/Portfolio)** | **[GitHub Repo](https://github.com/bruceboge/Portfolio)**
 
 ---
 
-Table of contents
-- Project overview
-- Design goals & UX decisions
-- Visual design system
-- Layout & responsive behavior
-- Interactivity & JavaScript
-- Accessibility
-- Performance & optimization
-- Tech stack & stats
-- File structure
-- How to run locally
-- Credits & license
+## Overview
+
+This is a single-page portfolio that presents:
+- **Hero Section** — Professional introduction with call-to-action
+- **About** — Background, skills, and expertise
+- **Projects** — Curated gallery of work with live links and source code
+- **Skills** — Technology stack and tools proficiency
+- **Contact** — Easy ways to get in touch
 
 ---
 
-Project overview
-This portfolio is a single-page, component-driven site that presents:
-- A welcoming hero section with name, tagline and primary call-to-action
-- A concise About section describing background and skills
-- A Projects gallery with project cards (image, summary, tech, links)
-- A Skills / Tools area visualizing strengths
-- Testimonials or highlights (optional)
-- Contact area with an accessible contact form (or mailto link)
-- Footer with social links and quick nav
+## Featured Work
 
-Everything is structured so sections can be reused or extracted into separate pages later.
+### ClubVote
+![ClubVote Project](./images/ClubVote.png)
+A platform for voting and community engagement. Clean UI for real-time voting interactions.
 
-Design goals & UX decisions
-- Clarity first: minimal visual clutter so content and projects stand out.
-- Intentional hierarchy: large hero → concise intro → projects → contact.
-- Focused CTAs: each project card has clear primary actions (view live / source).
-- Micro-interactions: subtle hover and focus states to give feedback without distraction.
-- Mobile-first: designed to be fully usable on phones, then scaled up for tablet/desktop.
+### ClubFlow
+![ClubFlow Project](./images/clubflow.png)
+Project management and collaboration tool with intuitive navigation and responsive design.
 
-Visual design system
-- Color scheme: a neutral base with a single accent color for CTAs and highlights.
-- Typography: system or web-safe fonts for good performance; heading scale chosen for readable rhythm.
-- Spacing: consistent spacing scale using CSS custom properties (e.g., --space-xx).
-- Components:
-  - Container: centered max-width with padding
-  - Card: image, title, tags, short description, CTA
-  - Nav: sticky on scroll with a compact mobile menu
-- Imagery: optimized, lazy-loaded thumbnails for project cards, retina-ready where beneficial.
+### n8n Integrations
+![Digital Sovereign with n8n](./images/Digital%20Sovereign%20n8n.png)
+Automation workflow integrations connecting multiple services and data sources seamlessly.
 
-Design tokens (example)
-- Colors: --bg, --text, --muted, --accent
-- Spacing: --space-1 .. --space-6
-- Radius: --rounded-md, --rounded-lg
-- Transitions: --motion-fast, --motion-medium
+---
 
-Layout & responsive behavior
-- Grid-first approach:
-  - Hero: single-column on mobile, two-column split on wider viewports.
-  - Projects: responsive grid using CSS Grid with auto-fit/minmax pattern.
-- Breakpoints:
-  - Mobile: up to 600px — stacked single-column
-  - Tablet: 600–900px — two columns for content where appropriate
-  - Desktop: 900px+ — full layout with enhanced spacing and side-by-side areas
-- CSS features used: CSS Grid, Flexbox, custom properties, clamp() for fluid typography.
+## Design Highlights
 
-Interactivity & JavaScript
-- Vanilla JS for small, focused interactions:
-  - Mobile nav toggle (aria-expanded toggling, focus management)
-  - Project modal or lightbox (keyboard accessible)
-  - Theme switcher (persisted to localStorage)
-  - Simple form validation for contact (if present)
-- Progressive enhancement: content is fully accessible with JS disabled; JS only adds convenience and extra UX touches.
+- **Mobile-First** — Fully responsive from phones to desktop
+- **Accessible** — Semantic HTML, ARIA labels, keyboard navigation
+- **Performance** — Optimized images, lazy-loading, minimal JavaScript overhead
+- **Micro-interactions** — Subtle hover and focus states for better feedback
+- **Clean Typography** — Professional Poppins font with readable hierarchy
 
-Accessibility
-- Semantic HTML elements (header, main, nav, section, footer).
-- Keyboard focus visible for all actionable elements.
-- Sufficient color contrast for text and interactive elements.
-- ARIA attributes used where necessary (e.g., aria-expanded, role="dialog" for modals).
-- Images include descriptive alt text; decorative images use empty alt attributes.
-- Landmarks for screen reader navigation.
+### Technical Features
 
-Performance & optimization
-- Image optimization: responsive srcsets, WebP where possible, and lazy-loading with loading="lazy".
-- Critical CSS: keep above-the-fold CSS lean and defer non-critical styles.
-- Minified assets for production (CSS and JS).
-- Use caching headers and deployable on GitHub Pages / CDN.
-- Example targets / guidance:
-  - Lighthouse (target after optimization): Performance >= 90, Accessibility >= 95, Best Practices >= 90, SEO >= 90.
-  - Real results may vary — run Lighthouse or PageSpeed Insights on your deployment to measure.
+| Feature | Implementation |
+|---------|-----------------|
+| Navigation | Vanilla JS with smooth page transitions |
+| Portfolio Filtering | Dynamic category-based filtering |
+| Sidebar Toggle | Mobile-responsive contact sidebar |
+| Responsive Layout | CSS Grid & Flexbox with mobile breakpoints |
+| Icons | Ionicons web components |
 
-Tech stack & stats
-- Languages:
-  - HTML: 42.4%
-  - CSS: 39%
-  - JavaScript: 18.6%
-- Primary tools:
-  - Hand-coded HTML/CSS/JS (no heavy framework)
-  - Build & tooling: optional npm scripts for minification, image optimization
-  - Deployment: GitHub Pages, Netlify, or similar
-- Example badges:
-  - ![Built with HTML/CSS/JS](https://img.shields.io/badge/stack-HTML%20%7C%20CSS%20%7C%20JS-lightgrey)
+---
 
-File structure (example)
-- index.html — main markup
-- assets/
-  - hero-screenshot.png
-  - projects/
-- css/
-  - main.css
-  - components.css
-- js/
-  - main.js
-  - nav.js
-- README.md
+## Tech Stack
 
-How to run locally
-1. Clone the repo
+- **Frontend:** HTML5, CSS3, Vanilla JavaScript
+- **Fonts:** Google Fonts (Poppins)
+- **Icons:** Ionicons
+- **Deployment:** GitHub Pages
+- **Analytics:** Google Analytics (configurable)
+
+---
+
+## Getting Started
+
+### View Online
+Visit the [live portfolio](https://bruceboge.github.io/Portfolio) to see the full project.
+
+### Run Locally
+1. Clone the repository:
+   ```bash
    git clone https://github.com/bruceboge/Portfolio.git
-2. Open index.html in a browser (for static setup), or:
-   - If using a dev server: serve with Live Server / simple-http-server / npm script
-3. Optional: run build tasks for minification/images if included (npm install && npm run build)
+   cd Portfolio
+   ```
 
-Customizing content
-- Replace the images in assets/ with your own project screenshots.
-- Update project cards in HTML with live links and repo links.
-- Tweak CSS variables in :root for quick theme changes.
+2. Open `index.html` in your browser, or use a local server:
+   ```bash
+   python -m http.server 8000
+   # or
+   npx http-server
+   ```
 
-Examples of visuals
-- Hero (replace path to your screenshot):
-  ![Hero](./images/portfolio.png)
-- Projects sample card:
-  ![Project sample](./images/ClubVote.png)
+3. Navigate to `http://localhost:8000`
 
-Notes on inspiration
-This project was inspired by the design and flow of Aakash Raj Banshi's portfolio (https://aakashrajbanshi.com.np/). I studied the layout, spacing, and subtle interactivity there and adapted concepts such as a focused hero, clean project cards, and tasteful micro-animations, while maintaining my own color palette, typography choices, and content priorities.
+### Customization
 
-Tips & future improvements
-- Add an automated image optimization pipeline (e.g., sharp) for CI builds.
-- Integrate simple analytics (privacy-friendly) to learn which projects get attention.
-- Add a small CMS or Markdown-driven projects section for easier updates.
-- Make the site a PWA for offline-first access and installability.
+- **Update Contact Info:** Edit sidebar contact details in `index.html`
+- **Modify Projects:** Update project cards with your own images and links
+- **Customize Colors:** Edit CSS variables in `style.css`
+- **Add New Projects:** Use the project card structure in `index.html` as a template
 
-Credits
-- Design inspiration: Aakash Raj Banshi — https://aakashrajbanshi.com.np/
-- Built by: Bruce Boge — https://github.com/bruceboge
+---
 
-License
-This repository is available under the MIT License. See LICENSE.md for details.
+## Project Structure
 
-Contact
-- Email: trionmulti@gmail.com
-- GitHub: https://github.com/bruceboge
-- LinkedIn: BRUCE OKAYA
+```
+Portfolio/
+├── index.html          # Main markup
+├── style.css           # Styling
+├── script.js           # Interactivity
+├── blog.js             # Blog functionality
+├── github_projects.js  # GitHub integration
+├── images/             # Project screenshots & assets
+├── README.md           # This file
+└── DEPLOY.md           # Deployment guide
+```
 
-Thank you for visiting — enjoy exploring!
+---
+
+## File Breakdown
+
+- **index.html** — 690 lines of semantic HTML with structured sections
+- **style.css** — Responsive design with CSS Grid, Flexbox, custom properties
+- **script.js** — 249 lines of vanilla JavaScript for navigation, filtering, and interactions
+
+---
+
+## Performance & Accessibility
+
+- ✅ Semantic HTML for better SEO and screen reader support
+- ✅ Keyboard navigation throughout
+- ✅ Sufficient color contrast (WCAG AA compliant)
+- ✅ Lazy-loaded images for faster page loads
+- ✅ Responsive design tested across devices
+- 🎯 Lighthouse target: Performance ≥90, Accessibility ≥95
+
+---
+
+## Future Enhancements
+
+- [ ] Dark mode toggle with localStorage persistence
+- [ ] Animated project cards on scroll
+- [ ] Blog integration with markdown support
+- [ ] Progressive Web App (PWA) capabilities
+- [ ] Content management system for easier updates
+- [ ] Privacy-friendly analytics dashboard
+
+---
+
+## Credits
+
+Design approach inspired by the portfolio of Aakash Raj Banshi (https://aakashrajbanshi.com.np/).
+
+---
+
+## License
+
+This project is licensed under the MIT License. See LICENSE.md for details.
+
+---
+
+## Contact
+
+**Bruce Boge Okaya**
+- 📧 Email: [trionmulti@gmail.com](mailto:trionmulti@gmail.com)
+- 🔗 GitHub: [bruceboge](https://github.com/bruceboge)
+- 📱 Phone: [+254746073786](tel:+254746073786)
+- 📍 Location: Nairobi, Kenya
+
+---
+
+Thank you for visiting my portfolio! Feel free to explore the projects and reach out if you'd like to collaborate.
