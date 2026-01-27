@@ -87,15 +87,11 @@ Visit the [live portfolio](https://bruceboge.github.io/Portfolio) to see the ful
    npx http-server
    ```
 
-<<<<<<< HEAD
 3. Navigate to `http://localhost:8000`
-=======
-Visuals
+
+## Visuals
 - Preview:
   ![Hero](./images/portfolio.png)
-- Projects sample card:
-  ![ClubVote Project](./images/ClubVote.png)
->>>>>>> e2c4c4cfec27df874e1672cf15242242788c221e
 
 ### Customization
 
@@ -166,7 +162,7 @@ This project is licensed under the MIT License. See LICENSE.md for details.
 
 ## Contact
 
-**Bruce Boge Okaya**
+**Bruce Boge**
 - 📧 Email: [trionmulti@gmail.com](mailto:trionmulti@gmail.com)
 - 🔗 GitHub: [bruceboge](https://github.com/bruceboge)
 - 📱 Phone: [+254746073786](tel:+254746073786)
